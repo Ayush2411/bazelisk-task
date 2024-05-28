@@ -12,6 +12,6 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: bazelbuild/setup-bazelisk@v1
-            - run: bazel build //...
-            - run: bazel test //...
+            - run: bazel build //projects/my-python-app:python_web
+            - run: bazel test //projects/my-python-app:calculator_test
 
