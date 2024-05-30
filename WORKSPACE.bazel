@@ -25,7 +25,10 @@ load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
 bazel_skylib_workspace()
 
 ### Python setup
+<<<<<<< HEAD
 
+=======
+>>>>>>> b533ae6a03903953cb5a00329f6c9b1ff0dc4c90
 load("@rules_python//python:pip.bzl", "pip_parse")
 
 pip_parse(
