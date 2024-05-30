@@ -6,3 +6,11 @@ go_library(
     importpath = "github.com/yush2411/bazelisk-task/projects/go_hello_world",
     visibility = ["//visibility:public"],
 )
+
+go_test(
+    name = "go_hello_world_test",
+    srcs = [
+        "hello_world_test.go"
+    ],
+    embed = [":go_hello_world"],
+)
