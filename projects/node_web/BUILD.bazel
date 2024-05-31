@@ -5,6 +5,6 @@ nodejs_binary(
     data = [
         "//projects/node_calculator:node_calculator",
         "@npm//express:express"
-        ],
+    ],
     entry_point = "index.js",
 )
