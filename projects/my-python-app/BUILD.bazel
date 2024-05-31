@@ -32,7 +32,7 @@ py_image(
 
 container_push(
   name = "publish",
-  image = "python_web_image",
+  image = "bazel/projects/my-python-app",
   format = "Docker",
   registry = "registry.hub.docker.com",
   repository = "ayushrusia/python_web_image",
