@@ -19,12 +19,12 @@ py_binary(
   deps = [":main"],
 )
 
-py_image(
-    name = "python_web_image",
-    srcs = ["main.py"],
-    main = "main.py",
-    deps = [":main"],
-)
+#py_image(
+#    name = "python_web_image",
+#    srcs = ["main.py"],
+#    main = "main.py",
+#    deps = [":main"],
+#)
 
 container_image(
   name = "python_web_image",
