@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/yush2411/bazelisk-task/projects/go_hello_world"
+	"github.com/Ayush2411/bazelisk-task/projects/go_hello_world"
 )
 
 func YourHandler(w http.ResponseWriter, r *http.Request) {
