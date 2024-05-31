@@ -27,7 +27,7 @@ py_image(
 )
 
 container_image(
-  name = "python_web_new_image",
+  name = "python_web_image",
   repository = "ayushrusia",
   entrypoint = ["/python_web"],
   files = [":python_web"],
