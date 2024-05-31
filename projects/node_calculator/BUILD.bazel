@@ -1,0 +1,2 @@
+load("@npm//bazel/jasmine:index.bzl", "jasmine_node_test")
+
