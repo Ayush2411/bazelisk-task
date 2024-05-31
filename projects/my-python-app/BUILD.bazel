@@ -1,7 +1,7 @@
 load("@python_deps//:requirements.bzl", "requirement")
 load("@io_bazel_rules_docker//python3:image.bzl", py_image="py3_image")
 load("@io_bazel_rules_docker//container:container.bzl", "container_push")
-#load("@io_bazel_rules_docker//container:image.bzl", "container_image")
+load("@io_bazel_rules_docker//container:image.bzl", "container_image")
 
 py_library(
   name = "main",
@@ -26,15 +26,18 @@ py_image(
     deps = [":main"],
 )
 
-#container_image(
-#  name = "python_web_new_image",
-#)
+container_image(
+  name = "python_web_new_image",
+  repository = "ayushrusia",
+  entrypoint = ["/python_web"],
+  files = [":python_web"],
+)
 
 container_push(
   name = "publish",
-  image = "bazel/projects/my-python-app",
+  image = ":python_web_new_image",
   format = "Docker",
   registry = "registry.hub.docker.com",
-  repository = "ayushrusia/python_web_image",
+  repository = "ayushrusia/python_web_new_image",
   tag = "v1",
 )
