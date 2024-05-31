@@ -69,8 +69,8 @@ load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
 ############################################################
 
 go_repository(
-    name = "com_github_gorrila_mux",
-    importpath = "github.com/gorrila/mux",
+    name = "com_github_gorilla_mux",
+    importpath = "github.com/gorilla/mux",
     tag = "v1.8.0",
 )
 
