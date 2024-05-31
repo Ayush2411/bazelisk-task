@@ -8,6 +8,6 @@ app.listen(8080, () => {
     console.log('listening on port 8080');
 });
 
-app.get((_req, res) => {
+app.get('/', (_req, res) => {
     res.send(`did you know that 1 + 2 = ${calculator.add(1,2)}`);
 });
