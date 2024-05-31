@@ -2,4 +2,3 @@ bazel-bazelisk-task
 bazel-bin
 bazel-out
 bazel-testlogs
-node_modules
