@@ -30,6 +30,6 @@ container_push(
   image = ":python_web_image",
   format = "Docker",
   registry = "registry.hub.docker.com",
-  repository = "ayushrusia",
+  repository = "ayushrusia/python_web_image",
   tag = "v1",
 )
