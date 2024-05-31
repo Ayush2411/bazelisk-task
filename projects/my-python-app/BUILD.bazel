@@ -24,13 +24,10 @@ py_image(
     srcs = ["main.py"],
     main = "main.py",
     deps = [":main"],
-    base = "@python_base_image",
 )
 
 container_image(
     name = "python_web_new_image",
-    base = ":python_web_image",
-    cmd = ["python3", "main.py"],
 )
 
 container_push(
