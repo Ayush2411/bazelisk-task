@@ -2,9 +2,11 @@
     "name": "multi-language-bazel-monorepo",
     "version": "0.0.1",
     "dependencies": {
-        
+        "express":"4.19.2"
     },
     "devDependencies": {
-
+        "@bazel/jasmine": "5.8.1",
+        "jasmine": "5.1.0",
+        "jasmine-core": "5.1.2"
     }
 }
