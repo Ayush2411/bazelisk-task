@@ -27,7 +27,8 @@ py_image(
 
 container_push(
   name = "publish",
-  format = ":python_web_image",
+  image = ":python_web_image",
+  format = "Docker",
   registry = "registry.hub.docker.com",
   repository = "ayushrusia",
   tag = "v1",
