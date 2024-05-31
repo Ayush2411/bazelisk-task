@@ -11,3 +11,6 @@ jasmine_node_test(
     srcs = ["calculator.spec.js"],
     data = [":node_calculator"],
 )
+
+
+# bazel run @nodejs_host//:npm -- install
